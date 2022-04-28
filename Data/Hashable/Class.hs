@@ -846,9 +846,6 @@ instance Hashable a => Hashable (Last a) where
 
 instance Hashable a => Hashable (WrappedMonoid a) where
     hashWithSalt p (WrapMonoid a) = hashWithSalt p a
-
-instance Hashable a => Hashable (Option a) where
-    hashWithSalt p (Option a) = hashWithSalt p a
 #endif
 
 -- instances for @Data.Functor.{Product,Sum,Compose}@, present
